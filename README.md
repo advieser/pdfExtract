@@ -21,6 +21,8 @@ R functions for extracting text from PDFs, mainly for processing them into forma
 - think about separate `.R` file for all user input functions
 - Implement `crop_text`
   - think about different options, maybe using the graphics device
+    - `imagefx`
+    - `manipulate` package
 - conversion functions for different distance measures for PDFs
 - think about creating a `settings.R` for default call options
 - `roxygen2` documentation

@@ -3,7 +3,7 @@ source("source_all.R")
 # Show all pdfs in pdf dir
 list.files("pdf/", pattern = "*.pdf")
 # Select file
-file <- file.path("pdf/test3-noocr.pdf")
+file <- file.path("pdf/test3-noocr.ign.pdf")
 # Open PDF
 system2('open', args = file, wait = FALSE)
 
