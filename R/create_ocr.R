@@ -33,12 +33,12 @@ create_ocr <- function(file, pages = NULL, language = c("deu", "eng")) {
     repeat {
       ask_improvement <- readline("Do you want to improve on this? (y/n/q) \n")
 
-      if (ask_improvement == "y") {
+      if (tolower(ask_improvement) == "y") {
         text_output <- improve_ocr(text_df = text_df)
         return(text_output)
-      } else if (ask_improvement == "n") {
+      } else if (tolower(ask_improvement) == "n") {
         return(text_output)
-      } else if (ask_improvement == "q") {
+      } else if (tolower(ask_improvement) == "q") {
         next
       } else {
         cat("Not a valid option.\n")
